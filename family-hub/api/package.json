@@ -1,0 +1,13 @@
+{
+  "name": "family-hub-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "func start"
+  },
+  "dependencies": {
+    "@azure/data-tables": "^13.2.2",
+    "uuid": "^9.0.1"
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Family Hub</h1>
+      <p>Stay in sync with announcements and chores.</p>
+    </header>
+
+    <main class="dashboard">
+      <section class="card" aria-labelledby="announcements-title">
+        <div class="card-header">
+          <h2 id="announcements-title">Announcements</h2>
+          <p class="card-subtitle">Share quick updates with everyone.</p>
+        </div>
+        <form id="announcement-form" class="form-row">
+          <label class="sr-only" for="announcement-text">Announcement</label>
+          <input
+            id="announcement-text"
+            type="text"
+            name="announcement"
+            placeholder="Add an announcement"
+            required
+          />
+          <button type="submit">Post</button>
+        </form>
+        <ul id="announcement-list" class="list"></ul>
+      </section>
+
+      <section class="card" aria-labelledby="chores-title">
+        <div class="card-header">
+          <h2 id="chores-title">Chores</h2>
+          <p class="card-subtitle">Track tasks and who owns them.</p>
+        </div>
+        <form id="chore-form" class="form-grid">
+          <label class="sr-only" for="chore-title">Chore title</label>
+          <input id="chore-title" name="title" type="text" placeholder="Chore title" required />
+          <label class="sr-only" for="chore-assignee">Assignee</label>
+          <input
+            id="chore-assignee"
+            name="assignee"
+            type="text"
+            placeholder="Assignee"
+            required
+          />
+          <button type="submit">Add</button>
+        </form>
+        <ul id="chore-list" class="list"></ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <small>Built for your family • Powered by Azure Static Web Apps</small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
